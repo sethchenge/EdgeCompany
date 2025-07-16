@@ -1,9 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdgeTech - Your IT Solutions Partner</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,18 +22,32 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+            <!-- PNG favicon (recommended) -->
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico">
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon.ico">
+            
+            <!-- Apple Touch Icon -->
+            <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+            
+            <!-- Android Chrome -->
+            <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+            <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+            
+            <!-- Manifest for PWA -->
+            <link rel="manifest" href="favicon_io/site.webmanifest">
+            
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#edgetech">
-                <span class="logo-icon">
-                    <span class="material-icons">computer</span>
-                </span>
-                <span class="brand-text">
-                    <span class="edge">Edge</span><span class="tech">Tech</span>
-                </span>
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="EdgeTech Logo" class="logo-img">
+                    <span class="brand-text">
+                        <span class="edge">Edge</span><span class="tech">Tech</span>
+                    </span>
+                </div>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
@@ -68,9 +88,14 @@
     <!-- Mobile Sidebar -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">
-                <span class="edge">Edge</span><span class="tech">Tech</span>
-            </h5>
+            <div class="offcanvas-title">
+                <div class="logo-container mobile-logo">
+                    <img src="images/logo.png" alt="EdgeTech Logo" class="logo-img">
+                    <span class="brand-text">
+                        <span class="edge">Edge</span><span class="tech">Tech</span>
+                    </span>
+                </div>
+            </div>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
@@ -238,7 +263,7 @@
                 <div class="col-lg-6">
                     <div class="leader-card">
                         <div class="leader-image">
-                            <span class="material-icons">account_circle</span>
+                            <img src="seth chenge.jpg" alt="C.E.O" style="width:24px; height:24px;">
                         </div>
                         <div class="leader-info">
                             <h4>SethChenge</h4>

@@ -30,7 +30,134 @@ body {
     background-color: var(--light-color);
     overflow-x: hidden;
 }
+/* Logo Container Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* Brand Text Styles */
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.edge {
+    color: #2563eb; /* Blue color for "Edge" */
+}
+
+.tech {
+    color: #1f2937; /* Dark color for "Tech" */
+}
+
+/* Navigation Styles */
+.navbar-brand {
+    padding: 0.5rem 0;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+/* Mobile Sidebar Logo */
+.mobile-logo {
+    gap: 10px;
+}
+
+.mobile-logo .logo-img {
+    height: 35px;
+}
+
+.mobile-logo .brand-text {
+    font-size: 1.3rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo-container {
+        gap: 8px;
+    }
+    
+    .logo-img {
+        height: 32px;
+    }
+    
+    .brand-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-container {
+        gap: 6px;
+    }
+    
+    .logo-img {
+        height: 28px;
+    }
+    
+    .brand-text {
+        font-size: 1.1rem;
+    }
+    
+    .mobile-logo .logo-img {
+        height: 30px;
+    }
+    
+    .mobile-logo .brand-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        height: 24px;
+    }
+    
+    .brand-text {
+        font-size: 1rem;
+    }
+    
+    .mobile-logo .logo-img {
+        height: 28px;
+    }
+    
+    .mobile-logo .brand-text {
+        font-size: 1.1rem;
+    }
+}
+
+/* Additional navbar spacing for logo */
+.navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+/* Ensure proper alignment on all screen sizes */
+.navbar-brand .logo-container {
+    min-height: 40px;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand .logo-container {
+        min-height: 32px;
+    }
+}
 /* Navigation Styles */
 .navbar {
     background: rgba(255, 255, 255, 0.95);

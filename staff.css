@@ -1,0 +1,460 @@
+/* Staff Page Styles */
+
+/* Hero Section */
+.staff-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.staff-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="200" r="3" fill="rgba(255,255,255,0.1)"/><circle cx="800" cy="300" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="400" cy="600" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="900" cy="700" r="3" fill="rgba(255,255,255,0.1)"/></svg>');
+    animation: floatBg 20s ease-in-out infinite;
+}
+
+@keyframes floatBg {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-20px) translateX(10px); }
+}
+
+.staff-hero .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.staff-hero .hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* CEO Section */
+.ceo-section {
+    background: #f8f9fa;
+    position: relative;
+}
+
+.ceo-card {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.ceo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.ceo-image-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.ceo-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-border {
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, #667eea, #764ba2, #667eea);
+    animation: rotateBorder 3s linear infinite;
+}
+
+@keyframes rotateBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ceo-title h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.ceo-title .position {
+    font-size: 1.1rem;
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.ceo-content {
+    padding-left: 2rem;
+}
+
+.achievement-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.ceo-content h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.ceo-bio {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.ceo-achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f8f9fa;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.achievement .material-icons {
+    color: #667eea;
+    font-size: 1.2rem;
+}
+
+/* Staff Tree Section */
+.staff-tree-section {
+    background: white;
+    position: relative;
+}
+
+.staff-tree {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.tree-level {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.level-1 {
+    margin-bottom: 6rem;
+}
+
+.staff-node {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.ceo-node {
+    margin-bottom: 2rem;
+}
+
+.staff-branches {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.staff-branches::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(180deg, #667eea, #764ba2);
+}
+
+.staff-branches::after {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 20%;
+    right: 20%;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.connection-line {
+    position: absolute;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+.top-line {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 60px;
+}
+
+.branch-line {
+    top: -60px;
+    width: 2px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-container {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.animated-border {
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, #667eea, #764ba2, #f39c12, #e74c3c, #667eea);
+    animation: rotateBorder 4s linear infinite;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.staff-info h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.staff-info .position {
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.staff-bio {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.staff-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Team Stats Section */
+.team-stats {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.stat-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    margin-bottom: 1rem;
+}
+
+.stat-icon .material-icons {
+    font-size: 3rem;
+    color: #ffd700;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .staff-hero .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .ceo-card {
+        padding: 2rem;
+    }
+    
+    .ceo-content {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    
+    .staff-branches {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .staff-branches::after {
+        display: none;
+    }
+    
+    .ceo-achievements {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .achievement {
+        justify-content: center;
+    }
+    
+    .profile-container {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .staff-hero .hero-title {
+        font-size: 2rem;
+    }
+    
+    .ceo-card {
+        padding: 1.5rem;
+    }
+    
+    .ceo-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .ceo-content h4 {
+        font-size: 1.5rem;
+    }
+    
+    .ceo-bio {
+        font-size: 1rem;
+    }
+}
+
+/* Animation Classes */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+}

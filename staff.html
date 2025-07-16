@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Members - EdgeTech</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="staff.css">
+    
+            <!-- PNG favicon (recommended) -->
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon.ico">
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon.ico">
+            
+            <!-- Apple Touch Icon -->
+            <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+            
+            <!-- Android Chrome -->
+            <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+            <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+            
+            <!-- Manifest for PWA -->
+            <link rel="manifest" href="favicon_io/site.webmanifest">
+            
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-icon">
+                    <span class="material-icons">computer</span>
+                </span>
+                <span class="brand-text">
+                    <span class="edge">Edge</span><span class="tech">Tech</span>
+                </span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="material-icons">menu</span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <span class="material-icons">home</span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">
+                            <span class="material-icons">build</span>
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="staff.html">
+                            <span class="material-icons">group</span>
+                            Staff Members
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <span class="material-icons">contact_mail</span>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">
+                <span class="edge">Edge</span><span class="tech">Tech</span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <span class="material-icons">home</span>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">
+                        <span class="material-icons">build</span>
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="staff.html">
+                        <span class="material-icons">group</span>
+                        Staff Members
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <span class="material-icons">contact_mail</span>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Staff Hero Section -->
+    <section class="staff-hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="hero-title fade-in-up">
+                        Meet Our <span class="gradient-text">Team</span>
+                    </h1>
+                    <p class="hero-subtitle fade-in-up">
+                        The brilliant minds behind EdgeTech's innovative solutions and exceptional service delivery.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Section -->
+    <section class="ceo-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="ceo-card" id="ceoCard">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 text-center">
+                                <div class="ceo-image-container">
+                                    <div class="profile-border" id="ceoProfileBorder">
+                                        <img src="seth chenge.jpg" alt="Seth Chenge" class="ceo-image">
+                                    </div>
+                                    <div class="ceo-title">
+                                        <h3>Seth Chenge</h3>
+                                        <p class="position">Chief Executive Officer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="ceo-content">
+                                    <div class="achievement-badge">
+                                        <span class="material-icons">star</span>
+                                        <span>Founder & Visionary</span>
+                                    </div>
+                                    <h4>The Vision Behind EdgeTech</h4>
+                                    <p class="ceo-bio">
+                                        Seth Chenge founded EdgeTech in 2020 with a revolutionary vision to democratize technology solutions for businesses of all sizes. With over a decade of experience in systems engineering and enterprise architecture, Seth recognized the growing gap between complex technological needs and accessible IT solutions. His passion for innovation and commitment to excellence drove him to create a company that would bridge this gap through cutting-edge services and personalized support.
+                                    </p>
+                                    <p class="ceo-bio">
+                                        Under Seth's leadership, EdgeTech has grown from a startup vision to a trusted technology partner serving over 500 clients across multiple industries. His expertise in cloud architecture, cybersecurity, and digital transformation has positioned EdgeTech as a leader in the IT services sector. Seth's commitment to continuous learning and adaptation has ensured that EdgeTech stays ahead of technological trends, providing clients with tomorrow's solutions today.
+                                    </p>
+                                    <div class="ceo-achievements">
+                                        <div class="achievement">
+                                            <span class="material-icons">business</span>
+                                            <span>500+ Projects Delivered</span>
+                                        </div>
+                                        <div class="achievement">
+                                            <span class="material-icons">school</span>
+                                            <span>M.S. Computer Science</span>
+                                        </div>
+                                        <div class="achievement">
+                                            <span class="material-icons">verified</span>
+                                            <span>AWS Certified Architect</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Tree Section -->
+    <section class="staff-tree-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Team Structure</h2>
+                    <p class="section-subtitle">
+                        Meet the talented professionals who make EdgeTech's success possible
+                    </p>
+                </div>
+            </div>
+            
+            <div class="staff-tree">
+                <!-- CEO Node (Top) -->
+                <div class="tree-level level-1">
+                    <div class="staff-node ceo-node" id="ceoNode">
+                        <div class="connection-line top-line"></div>
+                        <div class="profile-container">
+                            <div class="profile-border animated-border" id="ceoTreeBorder">
+                                <img src="seth chenge.jpg" alt="Seth Chenge" class="profile-image">
+                            </div>
+                            <div class="staff-info">
+                                <h4>Seth Chenge</h4>
+                                <p class="position">Chief Executive Officer</p>
+                                <div class="staff-skills">
+                                    <span class="skill-tag">Leadership</span>
+                                    <span class="skill-tag">Strategy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff Members (Bottom Level) -->
+                <div class="tree-level level-2">
+                    <div class="staff-branches">
+                        <!-- Left Branch -->
+                        <div class="staff-node" id="techLead">
+                            <div class="connection-line branch-line left-branch"></div>
+                            <div class="profile-container">
+                                <div class="profile-border animated-border" id="techLeadBorder">
+                                    <img src="https://via.placeholder.com/120x120/e74c3c/ffffff?text=AD" alt="Alex Johnson" class="profile-image">
+                                </div>
+                                <div class="staff-info">
+                                    <h4>Alex Johnson</h4>
+                                    <p class="position">Technical Lead</p>
+                                    <p class="staff-bio">
+                                        Alex brings 8 years of software development expertise to EdgeTech. His innovative approach to system architecture has revolutionized our development processes and enhanced client satisfaction.
+                                    </p>
+                                    <div class="staff-skills">
+                                        <span class="skill-tag">Full Stack</span>
+                                        <span class="skill-tag">DevOps</span>
+                                        <span class="skill-tag">Cloud</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Branch -->
+                        <div class="staff-node" id="supportManager">
+                            <div class="connection-line branch-line right-branch"></div>
+                            <div class="profile-container">
+                                <div class="profile-border animated-border" id="supportManagerBorder">
+                                    <img src="seth chenge.jpg" alt="Sarah Martinez" class="profile-image">
+                                </div>
+                                <div class="staff-info">
+                                    <h4>Sarah Martinez</h4>
+                                    <p class="position">Support Manager</p>
+                                    <p class="staff-bio">
+                                        Sarah leads our 24/7 support team with exceptional dedication and technical prowess. Her customer-first approach ensures every client receives personalized attention and swift resolution to their IT challenges.
+                                    </p>
+                                    <div class="staff-skills">
+                                        <span class="skill-tag">Support</span>
+                                        <span class="skill-tag">Networking</span>
+                                        <span class="skill-tag">Security</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Stats Section -->
+    <section class="team-stats py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <span class="material-icons">people</span>
+                        </div>
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Team Members</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <span class="material-icons">workspace_premium</span>
+                        </div>
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Years Combined Experience</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <span class="material-icons">verified</span>
+                        </div>
+                        <div class="stat-number" data-target="12">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <span class="material-icons">emoji_events</span>
+                        </div>
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <h5><span class="edge">Edge</span><span class="tech">Tech</span></h5>
+                        <p>Your trusted partner for comprehensive IT solutions and cutting-edge technology services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="services.html">OS Installation</a></li>
+                        <li><a href="services.html">IT Support</a></li>
+                        <li><a href="services.html">Troubleshooting</a></li>
+                        <li><a href="services.html">System Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Connect With Us</h6>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" class="social-link">
+                            <span class="material-icons">facebook</span>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link">
+                            <span class="material-icons">alternate_email</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link">
+                            <span class="material-icons">work</span>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link">
+                            <span class="material-icons">camera_alt</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">
+                        © 2025 EdgeTech. All rights reserved. | Built with innovation and excellence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script src="staff.js"></script>
+</body>
+</html>
